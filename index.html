@@ -13,19 +13,23 @@
             position: relative;
             overflow: auto; /* Allow scrolling */
             margin: 0; /* Remove default margin */
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            min-height: 100vh; /* Ensure full height */
         }
         .salita-container {
             text-align: center;
-            margin: 20px auto;
             position: relative;
             z-index: 1; /* Ensure content is above the background */
+            max-width: 600px; /* Limit the width of the content */
+            width: 100%; /* Allow it to be responsive */
         }
         .rounded-box {
             border: 3px solid orange;
             border-radius: 15px;
             padding: 20px;
             display: block;
-            max-width: 600px;
             margin: 20px auto;
             transition: all 0.3s ease;
             position: relative;
