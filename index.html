@@ -11,12 +11,14 @@
             background-color: black;
             color: white;
             position: relative;
-            overflow: hidden; /* Prevent scrolling */
+            overflow-y: auto; /* Allow vertical scrolling */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
             margin: 0; /* Remove default margin */
             display: flex; /* Use flexbox for centering */
             justify-content: center; /* Center horizontally */
             align-items: center; /* Center vertically */
-            height: 100vh; /* Full height of the viewport */
+            flex-direction: column; /* Stack items vertically */
+            min-height: 100vh; /* Ensure full height */
             width: 100vw; /* Full width of the viewport */
         }
         .salita-container {
