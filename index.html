@@ -10,15 +10,12 @@
             font-family: 'Montserrat', sans-serif;
             background-color: black;
             color: white;
-            position: relative;
-            overflow-y: auto; /* Allow vertical scrolling */
-            overflow-x: hidden; /* Prevent horizontal scrolling */
             margin: 0; /* Remove default margin */
             display: flex; /* Use flexbox for centering */
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
             flex-direction: column; /* Stack items vertically */
-            min-height: 100vh; /* Ensure full height */
+            align-items: center; /* Center horizontally */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            height: 100vh; /* Full height of the viewport */
             width: 100vw; /* Full width of the viewport */
         }
         .salita-container {
@@ -27,6 +24,8 @@
             z-index: 1; /* Ensure content is above the background */
             max-width: 90%; /* Limit the width of the content */
             padding: 20px; /* Add padding for better spacing */
+            overflow-y: auto; /* Allow vertical scrolling */
+            flex-grow: 1; /* Allow the container to grow and fill the space */
         }
         .rounded-box {
             border: 3px solid orange;
@@ -62,6 +61,12 @@
             border-right: 15px solid transparent;
             border-bottom: 25px solid rgba(255, 165, 0, 0.5); /* Hollow effect */
             opacity: 0.5; /* Low opacity for a glowing effect */
+        }
+
+        /* Hide scrollbar */
+        ::-webkit-scrollbar {
+            width: 0; /* Hide scrollbar */
+            background: transparent; /* Optional: make the background transparent */
         }
     </style>
 </head>
