@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salita: Bihirang gamit na salita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: black;
+            color: white;
+            position: relative;
+            overflow: auto; /* Allow scrolling */
+            margin: 0; /* Remove default margin */
+        }
+        .salita-container {
+            text-align: center;
+            margin: 20px auto;
+            position: relative;
+            z-index: 1; /* Ensure content is above the background */
+        }
+        .rounded-box {
+            border: 3px solid orange;
+            border-radius: 15px;
+            padding: 20px;
+            display: block;
+            max-width: 600px;
+            margin: 20px auto;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 2; /* Ensure box is above the background */
+        }
+        .rounded-box:hover {
+            box-shadow: 0 0 15px rgba(255, 165, 0, 0.5);
+        }
+        h1 {
+            color: orange;
+            margin-top: 0;
+            font-weight: 700;
+        }
+        .content {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .orange {
+            color: orange;
+        }
+        /* Background triangles */
+        .triangle {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 25px solid rgba(255, 165, 0, 0.5); /* Hollow effect */
+            opacity: 0.5; /* Low opacity for a glowing effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="salita-container">
+        <div class="rounded-box">
+            <h1>Salita: Bihirang gamit na Salita</h1>
+        </div>
+        <div class="rounded-box">
+            <h1 style="font-size: 2em;">Mga Salita</h1>
+            <div class="content">
+                <hr>
+                <p><strong class="orange">1. Anluwage</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Taong gumagawa o nag-aayos ng mga bagay na yari sa kahoy</li>
+                    <li><strong>Translation:</strong> Carpenter</li>
+                    <li><strong>Example:</strong> Ang anluwage ang gumawa ng bagong mesa sa kusina.</li>
+                </ul>
+
+                <p><strong class="orange">2. Antipara</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Kagamitang isinusuot sa mata para luminaw ang paningin</li>
+                    <li><strong>Translation:</strong> Eyeglasses</li>
+                    <li><strong>Example:</strong> Kailangan kong isuot ang antipara tuwing nagbabasa.</li>
+                </ul>
+
+                <p><strong class="orange">3. Badhi</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Mga guhit sa palad na pinaniniwalaang may kahulugan sa kapalaran</li>
+                    <li><strong>Translation:</strong> Lines on the palm of your hand</li>
+                    <li><strong>Example:</strong> Ayon sa matanda, ang aking badhi ay tanda ng magandang kinabukasan.</li>
+                </ul>
+
+                <p><strong class="orange">4. Bilnuran</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Sangay ng matematika na tumatalakay sa bilang at operasyon nito</li>
+                    <li><strong>Translation:</strong> Arithmetic</li>
+                    <li><strong>Example:</strong> Nagpapraktis si Carlo ng bilnuran upang humusay sa pagsusulit.</li>
+                </ul>
+
+                <p><strong class="orange">5. Duyog</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Pagtakip ng buwan sa araw sa tuwing may solar eclipse</li>
+                    <li><strong>Translation:</strong> Solar eclipse</li>
+                    <li><strong>Example:</strong> Nakita namin ang duyog kahapon habang kami’y nasa tabing-dagat.</li>
+                </ul>
+
+                <p><strong class="orange">6. Gat</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Titulong iginagawad sa isang kagalang-galang na lalaki</li>
+                    <li><strong>Translation:</strong> Sir (honorific title)</li>
+                    <li><strong>Example:</strong> Si Gat Jose Rizal ay isang bayani ng Pilipinas.</li>
+                </ul>
+
+                <p><strong class="orange">7. Gunita</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Alaala o pag-alala sa isang pangyayari o tao</li>
+                    <li><strong>Translation:</strong> Memory, recollection, remembrance</li>
+                    <li><strong>Example:</strong> Ginamit ni Lolo ang kanyang antipara upang basahin ang diyaryo.</li>
+                </ul>
+
+                <p><strong class="orange">8. Kalinaw</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Katahimikan, kapayapaan, o kalinawan ng isip</li>
+                    <li><strong>Translation:</strong> Calmness, peace, serenity, clarity</li>
+                    <li><strong>Example:</strong> Ang tanawin sa tabing-dagat ay nagdulot ng kalinaw sa kanyang isip.</li>
+                </ul>
+
+                <p><strong class="orange">9. Kubyertos</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Mga kasangkapang ginagamit sa pagkain tulad ng kutsara, tinidor, at kutsilyo</li>
+                    <li><strong>Translation:</strong> Kitchen utensils</li>
+                    <li><strong>Example:</strong> Isinasaayos ni Mama ang kubyertos sa hapag.</li>
+                </ul>
+
+                <p><strong class="orange">10. Mapanibugho</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Taong madaling magselos o naiinggit</li>
+                    <li><strong>Translation:</strong> Jealous person</li>
+                    <li><strong>Example:</strong> Hindi mapakali si Liza dahil siya ay mapanibugho.</li>
+                </ul>
+
+                <p><strong class="orange">11. Marahuyo</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Mabighani o maakit sa kagandahan ng isang bagay</li>
+                    <li><strong>Translation:</strong> Enchanted</li>
+                    <li><strong>Example:</strong> Marahuyo siya sa ganda ng mga bituin sa langit.</li>
+                </ul>
+
+                <p><strong class="orange">12. Marilag</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Maganda, kahanga-hanga, o napakakisig</li>
+                    <li><strong>Translation:</strong> Beautiful, splendid, gorgeous, exquisite</li>
+                    <li><strong>Example:</strong> Marilag ang tanawin mula sa tuktok ng bundok.</li>
+                </ul>
+
+                <p><strong class="orange">13. Pahimakas</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Huling pamamaalam o salita ng isang tao bago pumanaw</li>
+                    <li><strong>Translation:</strong> Last goodbye</li>
+                    <li><strong>Example:</strong> Ang kanyang pahimakas ay nagpaiyak sa buong pamilya.</li>
+                </ul>
+
+                <p><strong class="orange">14. Paminggalan</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Lugar sa kusina kung saan inilalagay ang pagkain at gamit</li>
+                    <li><strong>Translation:</strong> Kitchen or pantry</li>
+                    <li><strong>Example:</strong> May maraming de-lata sa aming paminggalan.</li>
+                </ul>
+
+                <p><strong class="orange">15. Pariugat</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Ugat ng isang bilang (karaniwang square root sa matematika)</li>
+                    <li><strong>Translation:</strong> Square root</li>
+                    <li><strong>Example:</strong> Ang pariugat ng 81 ay 9.</li>
+                </ul>
+
+                <p><strong class="orange">16. Payneta</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Palamuti o gamit sa buhok na karaniwang hugis suklay</li>
+                    <li><strong>Translation:</strong> Decorative hair comb</li>
+                    <li><strong>Example:</strong> Isinuot ni Lola ang kanyang gintong payneta sa kasal ng kanyang apo.</li>
+                </ul>
+
+                <p><strong class="orange">17. Samyo</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Mabango o kaaya-ayang amoy</li>
+                    <li><strong>Translation:</strong> Fragrance, aroma, sweet odor</li>
+                    <li><strong>Example:</strong> Humalimuyak ang samyo ng bagong lutong tinapay.</li>
+                </ul>
+
+                <p><strong class="orange">18. Sukgisan</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Sangay ng matematika na tumatalakay sa sukat, hugis, at espasyo</li>
+                    <li><strong>Translation:</strong> Geometry</li>
+                    <li><strong>Example:</strong> Natuto kami ng iba’t ibang hugis sa sukgisan.</li>
+                </ul>
+
+                <p><strong class="orange">19. Sulatroniko</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Mensaheng ipinapadala sa pamamagitan ng elektronikong paraan</li>
+                    <li><strong>Translation:</strong> Email</li>
+                    <li><strong>Example:</strong> Nakatanggap ako ng sulatroniko mula sa aming guro.</li>
+                </ul>
+
+                <p><strong class="orange">20. Yakis</strong></p>
+                <ul>
+                    <li><strong>Definition:</strong> Gawing matalim ang isang bagay</li>
+                    <li><strong>Translation:</strong> To sharpen something</li>
+                    <li><strong>Example:</strong> Yakin muna ang kutsilyo bago gamitin sa paghihiwa.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to create random hollow triangles
+        function createTriangles(num) {
+            const body = document.body;
+            const height = document.body.scrollHeight; // Get the total height of the content
+            for (let i = 0; i < num; i++) {
+                const triangle = document.createElement('div');
+                triangle.className = 'triangle';
+                triangle.style.top = Math.random() * height + 'px'; // Random vertical position based on total height
+                triangle.style.left = Math.random() * window.innerWidth + 'px'; // Random horizontal position
+                triangle.style.transform = 'rotate(' + (Math.random() * 360) + 'deg)'; // Random rotation
+                body.appendChild(triangle);
+            }
+        }
+
+        // Create 100 random hollow triangles to fill the background
+        createTriangles(100);
+    </script>
+</body>
+</html>
