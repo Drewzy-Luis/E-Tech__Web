@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Salita: Bihirang gamit na salita</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -11,20 +11,19 @@
             background-color: black;
             color: white;
             position: relative;
-            overflow: auto; /* Allow scrolling */
+            overflow: hidden; /* Prevent scrolling */
             margin: 0; /* Remove default margin */
             display: flex; /* Use flexbox for centering */
             justify-content: center; /* Center horizontally */
             align-items: center; /* Center vertically */
-            min-height: 200vh; /* Ensure full height */
-            flex-direction: column; /* Stack items vertically */
+            height: 100vh; /* Full height of the viewport */
+            width: 100vw; /* Full width of the viewport */
         }
         .salita-container {
             text-align: center;
             position: relative;
             z-index: 1; /* Ensure content is above the background */
-            max-width: 600px; /* Limit the width of the content */
-            width: 100%; /* Allow it to be responsive */
+            max-width: 90%; /* Limit the width of the content */
             padding: 20px; /* Add padding for better spacing */
         }
         .rounded-box {
